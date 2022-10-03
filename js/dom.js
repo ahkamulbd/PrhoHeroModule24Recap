@@ -13,6 +13,8 @@ const student = {
     }
 }
 
+// Option 1: TagName
+
 const liCollection = document.getElementsByTagName('li');
 for (const li of liCollection) {
     //console.log(li);
@@ -24,13 +26,27 @@ for (const h1 of allHeadings) {
     //console.log(h1.innerText);
 }
 
+// Option 2: ClassName
+
 const places = document.getElementsByClassName('important-places');
 for (const place of places) {
-    console.log(place.innerHTML);
+    //console.log(place.innerHTML);
 }
+
+// Option 3: Id
 
 const fruitsTitle = document.getElementById('fruits-title');
 fruitsTitle.innerText = 'Fruits Title Changed by JS';
 
 const otherPlace = document.getElementsByClassName('other-place');
 otherPlace.innerText = 'Shalban Jabo Na';
+
+
+// Option 4: querySelectorAll / querySelector
+
+
+const someLi = document.querySelector('.fruits-container li');
+//console.log(someLi);
+for (const li of someLi) {
+    console.log(li.innerText);
+}

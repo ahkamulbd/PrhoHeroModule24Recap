@@ -5,3 +5,11 @@ h1 {
 li {
     color: orangered;
 }
+
+.large-text {
+    text-align: center;
+}
+
+.font-size {
+    font-size: 30px;
+}
